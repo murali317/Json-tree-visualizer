@@ -17,10 +17,9 @@ Screenshots of JSON Tree Visualizer
 
 <img width="955" height="483" alt="{1778D8B9-0510-415E-BE67-172E8A620C6D}" src="https://github.com/user-attachments/assets/2ae62f5a-d413-45bc-a57d-0d9fed48a5ad" />
 
-<img width="950" height="481" alt="{33B61B6B-9BFA-4760-AFAC-C0EFF906C34F}" src="https://github.com/user-attachments/assets/3c4bce5d-148d-4f9f-a3a9-99693000f744" />
+<img width="957" height="480" alt="{9948B754-843D-49BF-B166-78F9B5F8756C}" src="https://github.com/user-attachments/assets/11863b30-dc52-4192-b0d8-adb8a1aedf11" />
 
-<img width="953" height="480" alt="{933794F1-044E-454A-ADAE-A972D8045463}" src="https://github.com/user-attachments/assets/0ee0da77-0a9a-4780-947c-569d1bd6bc70" />
-
+<img width="947" height="475" alt="{675CA776-68AA-4DFF-A972-AF1CB6FE4778}" src="https://github.com/user-attachments/assets/00458130-6408-4c9d-9fd5-38c3f084ccec" />
 
 
 ## Getting Started
