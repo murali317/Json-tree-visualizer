@@ -10,10 +10,13 @@ import ReactFlow, {
   getViewportForBounds,
 } from 'reactflow';
 import { toPng } from 'html-to-image';
+import CustomNode from './CustomNode';
 import 'reactflow/dist/style.css';
 
-// Silence React Flow warning by defining empty nodeTypes and edgeTypes outside the component
-const nodeTypes = {};
+// Define custom node types for React Flow
+const nodeTypes = {
+  default: CustomNode
+};
 const edgeTypes = {};
 
 function Inner({ nodes, edges, highlightNodeId, onNodeClick }) {

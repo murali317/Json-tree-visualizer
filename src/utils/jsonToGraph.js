@@ -1,5 +1,7 @@
 const NODE_WIDTH = 220
 const NODE_HEIGHT = 54
+const HORIZONTAL_SPACING = 150  // Increased from 100
+const VERTICAL_SPACING = 150    // Increased from 120
 
 export function jsonToGraph(root) {
   const nodes = []
@@ -9,8 +11,8 @@ export function jsonToGraph(root) {
 
   function posFor(depth) {
     if (!xCounters[depth]) xCounters[depth] = 0
-    const x = xCounters[depth] * (NODE_WIDTH + 60)
-    const y = depth * (NODE_HEIGHT + 80)
+    const x = xCounters[depth] * (NODE_WIDTH + HORIZONTAL_SPACING)
+    const y = depth * (NODE_HEIGHT + VERTICAL_SPACING)
     xCounters[depth] += 1
     return { x, y }
   }
@@ -26,28 +28,39 @@ export function jsonToGraph(root) {
     const id = path // use path as node id for stability
     const type = typeOf(val)
     const pos = posFor(depth)
+    
+    const keyLabel = labelKey || '$'
+    const valueLabel = type === 'primitive' ? String(val) : ''
+    
     const label = (() => {
       if (type === 'object' && path === '$') return 'Root Object'
-      if (type === 'object') return `${labelKey || '$'} (object)`
-      if (type === 'array') return `${labelKey || '$'} (array)`
-      return `${labelKey || '$'}: ${String(val)}`
+      if (type === 'object') return keyLabel
+      if (type === 'array') return `${keyLabel} [${val.length}]`
+      return valueLabel
     })()
 
     nodes.push({
       id,
       position: pos,
-      data: { label, path: path, value: val, type },
-      style: {
-        minWidth: NODE_WIDTH,
-        padding: 8,
-        borderRadius: 8,
-        border: '1px solid rgba(0,0,0,0.06)',
-        background: type === 'object' ? '#eef2ff' : (type === 'array' ? '#ecfdf5' : '#fff7ed')
+      data: { 
+        label, 
+        path: path, 
+        value: val, 
+        type,
+        keyLabel,
+        valueLabel 
       }
     })
 
     if (parentPath) {
-      edges.push({ id: `e-${parentPath}-${id}`, source: parentPath, target: id, animated: false })
+      edges.push({ 
+        id: `e-${parentPath}-${id}`, 
+        source: parentPath, 
+        target: id, 
+        animated: false,
+        type: 'smoothstep',
+        style: { stroke: '#94a3b8', strokeWidth: 2 }
+      })
     }
 
     if (type === 'object') {
