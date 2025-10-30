@@ -13,7 +13,15 @@ A modern, interactive JSON tree visualizer built with React, React Flow, and Tai
 
 ## Demo
 
-![Screenshot of JSON Tree Visualizer](./screenshot.png)
+Screenshots of JSON Tree Visualizer
+
+<img width="955" height="483" alt="{1778D8B9-0510-415E-BE67-172E8A620C6D}" src="https://github.com/user-attachments/assets/2ae62f5a-d413-45bc-a57d-0d9fed48a5ad" />
+
+<img width="950" height="481" alt="{33B61B6B-9BFA-4760-AFAC-C0EFF906C34F}" src="https://github.com/user-attachments/assets/3c4bce5d-148d-4f9f-a3a9-99693000f744" />
+
+<img width="953" height="480" alt="{933794F1-044E-454A-ADAE-A972D8045463}" src="https://github.com/user-attachments/assets/0ee0da77-0a9a-4780-947c-569d1bd6bc70" />
+
+
 
 ## Getting Started
 
@@ -76,10 +84,8 @@ MIT
 
 ---
 
-> Made with ❤️ using React Flow and Tailwind CSS.
-
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+> Made with ❤️ using React Flow and Tailwind CSS by Krishna 🦚
