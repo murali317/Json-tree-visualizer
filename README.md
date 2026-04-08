@@ -13,6 +13,11 @@ A modern, interactive JSON tree visualizer built with React, React Flow, and Tai
 
 ## Demo
 
+
+[Live link 🚀](https://json-tree-visualizer-apiwiz.netlify.app/)
+
+
+
 Screenshots of JSON Tree Visualizer
 
 <img width="955" height="483" alt="{1778D8B9-0510-415E-BE67-172E8A620C6D}" src="https://github.com/user-attachments/assets/2ae62f5a-d413-45bc-a57d-0d9fed48a5ad" />
@@ -37,8 +42,6 @@ Screenshots of JSON Tree Visualizer
    ```sh
    npm run dev
    ```
-4. **Open in your browser:**
-   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
 
 ## Usage
 
